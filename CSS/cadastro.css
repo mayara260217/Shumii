@@ -1,0 +1,211 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #080127, #281273, #707CCE);
+}
+
+/* MENU */
+
+header {
+    padding: 20px 7%;
+    background: rgba(8, 1, 39, 0.5);
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.logo-circulo {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #707CCE, #281273);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* CARGOS */
+
+.tipos-acesso {
+    display: flex;
+    gap: 12px;
+}
+
+.cargo {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.cargo:hover,
+.cargo.ativo {
+    color: #AEB8FF;
+    border-bottom: 2px solid #AEB8FF;
+}
+
+/* CADASTRO */
+
+.pagina-cadastro {
+    min-height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 15px;
+}
+
+.cartao-cadastro {
+    background: white;
+    width: 100%;
+    max-width: 390px;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.25);
+}
+
+/* LOGO */
+
+.logo-cadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.logo-cadastro h1 {
+    color: #281273;
+    font-size: 27px;
+}
+
+/* TÍTULOS */
+
+.cartao-cadastro h2 {
+    color: #281273;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.cartao-cadastro > p {
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* CAMPOS */
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-bottom: 14px;
+}
+
+.campo label {
+    color: #281273;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.campo input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #D8D8D8;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+}
+
+.campo input:focus {
+    border-color: #707CCE;
+}
+
+/* BOTÃO */
+
+.botao-cadastrar {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(90deg, #281273, #707CCE);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.botao-cadastrar:hover {
+    opacity: 0.85;
+}
+
+/* LINKS */
+
+.login {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.login a {
+    color: #707CCE;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.voltar {
+    display: block;
+    text-align: center;
+    color: #707CCE;
+    text-decoration: none;
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 650px) {
+
+    .menu {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .tipos-acesso {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .cargo {
+        font-size: 13px;
+    }
+
+    .cartao-cadastro {
+        padding: 23px;
+    }
+}

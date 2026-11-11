@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #080127, #281273, #707CCE);
+}
+
+.header-principal {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 16px 7%;
+    background: rgba(8, 1, 39, 0.6);
+}
+
+.voltar {
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+    line-height: 1;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.logo-circulo {
+    width: 38px;
+    height: 38px;
+    background: linear-gradient(135deg, #707CCE, #281273);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.header-perfil {
+    padding: 14px 7%;
+    background: rgba(255, 255, 255, 0.08);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.perfil-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.foto-perfil {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #AEB8FF, #707CCE);
+    border: 2px solid white;
+}
+
+.perfil-info span {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.corpo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 40px 20px;
+}
+
+.menu-btn {
+    width: 100%;
+    max-width: 360px;
+    padding: 16px;
+    background: rgba(255, 255, 255, 0.12);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: left;
+}
+
+.menu-btn:hover {
+    background: rgba(255, 255, 255, 0.22);
+}
